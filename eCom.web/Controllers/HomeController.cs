@@ -24,12 +24,12 @@ namespace eCom.web.Controllers
             
              return View();
         }
-        public IActionResult GetCategories()
+        /*public IActionResult GetCategories()
         {
             IEnumerable<Category> obj=_db.Categories;
             return View(obj);
 
-        }
+        }*/
 
         public IActionResult Privacy()
         {

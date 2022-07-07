@@ -13,7 +13,7 @@ namespace eCom.DataAccess.Data
         public ApplicationDBContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDBContext>();
-            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=eComm;Trusted_Connection=True;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer("Server=desktop-doc2df6;Database=eticket;Trusted_Connection=True;MultipleActiveResultSets=true");
 
             return new ApplicationDBContext(optionsBuilder.Options);
         }
